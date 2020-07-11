@@ -1,0 +1,17 @@
+Ismerjük a commit parancsot, amivel a változtatásainkat tudjuk véglegesíteni a helyi gépünkön. Ideje ezeket feltölteni egy közös Git szerverre.
+A közös munka alapját a következő három parancs jelenti:
+Fetch - Mi történt mostanában?
+
+A git fetch parancs megnézi, milyen változások történtek a szerveren. Ezeket a változásokat le is tölti, de nem nyúl hozzá az aktuális munkánkhoz, a working directory nem változik a hatására. Ezáltal nyugodtan kiadhatjuk bármikor a parancsot, nem lesz kellementlen mellékhatása.
+Pull - Jöhet minden!
+
+A git pull parancs letölti a változásokat a szerverről, és integrálja a saját munkánkba. Fontos különbség a fetch parancshoz képest, hogy a pull nem egy biztonságos parancs, változni fog a mappánk tartalma, ha kiadjuk. Mindig commitoljunk, mielőtt kiadnánk a pull parancsot!
+Push - Megy a munkám!
+
+A git push parancs feltölti a commitjainkat a szerverre. Jegyezzük meg, csak azok a változások mennek fel, amiket commitoltunk! Mielőtt pusholni próbálnánk, kérjük el a szervertől a változásokat a pull paranccsal!
+Dokumentáció
+
+    https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
+    Lokálisan: git fetch --help
+    Lokálisan: git pull --help
+    Lokálisan: git push --help
